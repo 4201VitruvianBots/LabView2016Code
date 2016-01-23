@@ -113,6 +113,33 @@ AddOutputFilter chunkFilter
 		<Item Name="Support Code" Type="Folder">
 			<Item Name="Elapsed Times.vi" Type="VI" URL="../Elapsed Times.vi"/>
 		</Item>
+		<Item Name="Support VIs" Type="Folder">
+			<Item Name="navX Library v2" Type="Folder">
+				<Item Name="Get" Type="Folder">
+					<Item Name="Raw Values" Type="Folder"/>
+					<Item Name="System Information" Type="Folder"/>
+				</Item>
+				<Item Name="IO" Type="Folder">
+					<Item Name="Internal" Type="Folder">
+						<Item Name="SERIAL" Type="Folder"/>
+						<Item Name="SPI" Type="Folder"/>
+					</Item>
+					<Item Name="Open" Type="Folder"/>
+				</Item>
+				<Item Name="RefNum" Type="Folder"/>
+				<Item Name="Set" Type="Folder"/>
+				<Item Name="TypeDefs" Type="Folder">
+					<Item Name="Flags" Type="Folder"/>
+					<Item Name="navX Open TypeDefs" Type="Folder"/>
+					<Item Name="Z900_navX_UpdateRateTypeDef.ctl" Type="VI" URL="../Support VIs/navX Library v2/TypeDefs/Z900_navX_UpdateRateTypeDef.ctl"/>
+				</Item>
+				<Item Name="Util" Type="Folder">
+					<Item Name="Decode Protocol" Type="Folder"/>
+					<Item Name="Encode Protocol" Type="Folder"/>
+				</Item>
+				<Item Name="navX Library v2.lvlib" Type="Library" URL="../Support VIs/navX Library v2/navX Library v2.lvlib"/>
+			</Item>
+		</Item>
 		<Item Name="Team Code" Type="Folder">
 			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
 			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
@@ -585,8 +612,7 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="navX Library v2.lvlib" Type="Library" URL="../../../../Downloads/navX-MXP-LabVIEW-master/navX-MXP-LabVIEW-master/navX Library v2/navX Library v2.lvlib"/>
-			<Item Name="NI WPI Serial USB.lvlib" Type="Library" URL="../../../../Downloads/navX-MXP-LabVIEW-master/navX-MXP-LabVIEW-master/NI WPI/NI WPI Serial USB.lvlib"/>
+			<Item Name="NI WPI Serial USB.lvlib" Type="Library" URL="../Support VIs/NI WPI/NI WPI Serial USB.lvlib"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -599,6 +625,12 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Z900_navX_Get_LinearAcceleration.vi" Type="VI" URL="../../../../Downloads/navX-MXP-LabVIEW-master/navX-MXP-LabVIEW-master/navX Library v2/Get/Z900_navX_Get_LinearAcceleration.vi"/>
+			<Item Name="Z900_navX_Get_YPRHfH.vi" Type="VI" URL="../../../../Downloads/navX-MXP-LabVIEW-master/navX-MXP-LabVIEW-master/navX Library v2/Get/Z900_navX_Get_YPRHfH.vi"/>
+			<Item Name="Z900_navX_Open.vi" Type="VI" URL="../../../../Downloads/navX-MXP-LabVIEW-master/navX-MXP-LabVIEW-master/navX Library v2/IO/Z900_navX_Open.vi"/>
+			<Item Name="Z900_navX_Open_Serial.vi" Type="VI" URL="../../../../Downloads/navX-MXP-LabVIEW-master/navX-MXP-LabVIEW-master/navX Library v2/IO/Open/Z900_navX_Open_Serial.vi"/>
+			<Item Name="Z900_navX_RefNum_Get.vi" Type="VI" URL="../../../../Downloads/navX-MXP-LabVIEW-master/navX-MXP-LabVIEW-master/navX Library v2/RefNum/Z900_navX_RefNum_Get.vi"/>
+			<Item Name="Z900_navX_RefNum_Set.vi" Type="VI" URL="../../../../Downloads/navX-MXP-LabVIEW-master/navX-MXP-LabVIEW-master/navX Library v2/RefNum/Z900_navX_RefNum_Set.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -614,10 +646,10 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">/C/Users/Admin/Documents/LabVIEW Data/TeleOp Master/Builds</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -627,7 +659,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path" Type="Path">/home/lvuser/natinst/bin/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{DB01CD21-4447-4671-A00A-D774E7A6FDE1}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{DD3DA1E7-E691-4DC1-84C2-F317006780CB}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Target/Robot Main.vi</Property>
@@ -637,7 +669,7 @@ AddOutputFilter chunkFilter
 				<Property Name="TgtF_companyName" Type="Str">NI</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">FRC Robot Boot-up Deployment</Property>
 				<Property Name="TgtF_internalName" Type="Str">FRC Robot Boot-up Deployment</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2013 NI</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright c 2013 NI</Property>
 				<Property Name="TgtF_productName" Type="Str">FRC Robot Boot-up Deployment</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{8C9344B8-7ED9-4E5F-92AE-3A9F547EFD4A}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
