@@ -612,7 +612,6 @@ AddOutputFilter chunkFilter
 			<Item Name="FRC_NetworkCommunication.dll" Type="Document" URL="FRC_NetworkCommunication.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Gyro auto.ctl" Type="VI" URL="../Support VIs/Gyro auto.ctl"/>
 			<Item Name="NI WPI Serial USB.lvlib" Type="Library" URL="../Support VIs/NI WPI/NI WPI Serial USB.lvlib"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -626,9 +625,6 @@ AddOutputFilter chunkFilter
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Z900_navX_Open.vi" Type="VI" URL="../../../../Downloads/navX-MXP-LabVIEW-master/navX-MXP-LabVIEW-master/navX Library v2/IO/Z900_navX_Open.vi"/>
-			<Item Name="Z900_navX_Open_Serial.vi" Type="VI" URL="../../../../Downloads/navX-MXP-LabVIEW-master/navX-MXP-LabVIEW-master/navX Library v2/IO/Open/Z900_navX_Open_Serial.vi"/>
-			<Item Name="Z900_navX_RefNum_Set.vi" Type="VI" URL="../../../../Downloads/navX-MXP-LabVIEW-master/navX-MXP-LabVIEW-master/navX Library v2/RefNum/Z900_navX_RefNum_Set.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="FRC Robot Boot-up Deployment" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
