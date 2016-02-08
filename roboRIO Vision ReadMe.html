@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>FRC 2015 LabVIEW roboRIO Vision Readme</title>
+</head>
+<body>
+<h1 style="text-align: center;">FRC 2015 LabVIEW roboRIO Vision Example</h1>
+<br>
+This vision example is in the roboRIO target section, and is intended to open on the roboRIO, not on the host computer. In order to run these examples, you will need to connect to a roboRIO, modify the target DNS name in the properties dialog and you will need to run the driver station. The primary VI to open and run is Vision Example Robot Main.vi. The vision processing code is located in Vision Processing.vi.
+
+<br><br>
+The Tutorials tab of the LabVIEW Getting Started Window contains step-by-step information for integration with robot and dashboard code.
+<br><br>
+
+
+You can change between USB and Axis IP cameras on the diagram of the Vision Processing VI. The kit USB camera is typically addressed as "USB 0" and can be selected using the Boolean constant at the far left. Axis cameras from previous year kits can be accessed at their fixed IP address, or using "axis-camera.local" -- provided that is their host name. Older Axis cameras often use their axis-serial number as the default host name. The host name can be modified using the web-based camera configuration utility.
+
+<br><br>
+This example uses the same approach as the FRC Color Processing Example.vi. It does not support interactive calibration, though that could be accomplished by customizing the dashboard and using network tables to share the color values.
+
+</body>
+</html>

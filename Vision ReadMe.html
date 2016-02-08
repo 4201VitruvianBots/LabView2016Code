@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title>FRC 2015 LabVIEW Vision Readme</title>
+</head>
+<body>
+<h1 style="text-align: center;">FRC 2016 LabVIEW Vision Example</h1>
+<br>
+The vision examples for the My Computer section are intended to open on the laptop or desktop computer and not on the roboRIO. They can be used to compare approaches, algorithms, and cameras. They allow for quick experimentation or calibration of vision code even before you have access to a roboRIO. They can also be used as a basis for dashboard based vision processing. If you are looking for the roboRIO example, look in the roboRIO target section in the project window.
+
+<br><br>
+The Tutorials tab of the LabVIEW Getting Started Window contains step-by-step information for integration with robot and dashboard code.
+<br><br>
+
+This example project comes with a collection of sample images. You can also change to the camera tab and enter in your camera's address. The USB camera will typically be "USB 0" or "USB 1" depending on whether the computer has a built-in webcam. Axis cameras can be accessed at their fixed IP address, or using "axis-camera.local" -- provided that is their host name. Older Axis cameras often use their axis-serial number as the default host name. The host name can be modified using the Axis web-based camera configuration utility.
+
+<br><br>
+The FRC Color Processing Example.vi assumes the bright retro-reflection from a ring light and scores particles in the image using analytical measurements based on the geometry of the taped shape. By default it is set up to perform a color threshold for a colored LED ring light. If the robot uses a white ring light, it is possible to modify the processing to be intensity based for either a color or a grayscale image. The default scoring uses aspect ratio, area vs convext hull area, moment of inertia and an X and Y pixel density profile. You may want to review the analytical calculations, adjust the way these scores are combined, or adjust the threshold. Annotations within the image help explain the scores of various particles.
+
+
+<br><br>
+The FRC Particle Classification Example.vi also uses color or intensity threshold to produce a binary image of particles. It then uses a trained classifier to grade the particles according to its classification matrix. Training is performed using binary images and the trainer located in Start>>All Programs>>National Instruments>>Vision>>Utilities. The trained images are analyzed, producing a set of measurements used to construct a distance vector. There are more extensive examples of classification libraries in the examples/vision folder.
+
+<br><br>
+The desktop VIs support interactive calibration. If you click and draw a line segment over the image, the sampled pixels will be used to set the H, S, and V values based on the averge and standard deviation of each element.
+<br><br>
+
+The Tutorials tab of the LabVIEW Getting Started Window contains step-by-step information for integration with robot and dashboard code.
+</body>
+</html>
